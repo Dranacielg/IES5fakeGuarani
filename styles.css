@@ -60,13 +60,26 @@ body {
 
 /* Contenedor principal */
 .container {
+    display: flex; /* Hacer el contenedor flex para alinear elementos en paralelo */
     margin: 30px auto;
     width: 80%;
-    max-width: 600px;
+    max-width: 800px; /* Aumentar el ancho para acomodar ambos cuadros */
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.form-container {
+    flex: 1; /* Permitir que el formulario use el espacio disponible */
+    margin-right: 20px; /* Espacio entre el formulario y el cuadro de información */
+}
+
+.info-container {
+    flex: 1; /* Permitir que la información use el espacio disponible */
+    padding: 10px;
+    background-color: #f0f0f0; /* Fondo gris claro para el cuadro de información */
+    border-radius: 5px;
 }
 
 h2 {
@@ -90,7 +103,7 @@ form input, form textarea {
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 100%;
+    width: 100%; /* Asegura que los formularios ocupen el 100% de su contenedor */
 }
 
 form button {

@@ -3,37 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario SIU Guaraní</title>
+    <title>SIU Guaraní</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Encabezado con logo -->
-    <header class="header">
+
+    <!-- Encabezado -->
+    <div class="header">
         <a href="index.html">
-            <img src="logo.jpg" alt="Logo SIU Guaraní" class="logo">
+            <img src="logo.jpg" alt="SIU Guaraní Logo" class="logo">
         </a>
-    </header>
+    </div>
 
     <!-- Barra de navegación -->
-    <nav class="nav-bar">
+    <div class="nav-bar">
         <ul>
-            <li class="active"><a href="index.html">Ingrese sus datos</a></li>
-            <li><a href="ayuda.html">Ayuda</a></li>
+            <li class="active"><a href="#login">Iniciar Sesión</a></li>
+            <li><a href="#ayuda">Ayuda</a></li>
         </ul>
-    </nav>
-
-    <!-- Contenido principal - Formulario de autenticación -->
-    <div class="container">
-        <h2>Ingrese sus datos</h2>
-        <form>
-            <label for="usuario">Usuario</label>
-            <input type="text" id="usuario" name="usuario" required>
-
-            <label for="contrasena">Contraseña</label>
-            <input type="password" id="contrasena" name="contrasena" required>
-
-            <button type="submit">Ingresar</button>
-        </form>
     </div>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <div id="login" class="form-container">
+            <h2>Ingrese sus datos</h2>
+            <form>
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario" required>
+
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" id="contraseña" name="contraseña" required>
+
+                <button type="submit">Ingresar</button>
+            </form>
+        </div>
+
+        <div class="info-container">
+            <h2>SIU Guaraní</h2>
+            <p>Algunas de las cosas que podés hacer con este sistema son:</p>
+            <ul>
+                <li>Inscribirte a materias y exámenes.</li>
+                <li>Consultar el plan de tu propuesta.</li>
+                <li>Consultar tu historia académica.</li>
+                <li>Actualizar tus datos personales.</li>
+                <li>Recibir alertas sobre períodos de inscripción o vencimiento de exámenes finales.</li>
+            </ul>
+        </div>
+    </div>
+
 </body>
 </html>
