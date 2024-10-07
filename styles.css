@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #f5f5f5; /* Fondo gris claro para el body */
 }
 
 /* Encabezado */
@@ -64,22 +64,20 @@ body {
     margin: 30px auto;
     width: 80%;
     max-width: 800px; /* Aumentar el ancho para acomodar ambos cuadros */
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-.form-container {
-    flex: 1; /* Permitir que el formulario use el espacio disponible */
-    margin-right: 20px; /* Espacio entre el formulario y el cuadro de información */
+/* Contenedor para los formularios y el cuadro de información */
+.form-container, .info-container {
+    flex: 1; /* Permitir que ambos usen el espacio disponible */
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco para ambos */
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-right: 20px; /* Espacio entre ambos */
 }
 
 .info-container {
-    flex: 1; /* Permitir que la información use el espacio disponible */
-    padding: 10px;
-    background-color: #f0f0f0; /* Fondo gris claro para el cuadro de información */
-    border-radius: 5px;
+    margin-right: 0; /* El último cuadro no necesita margen derecho */
 }
 
 h2 {
